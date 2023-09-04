@@ -1,0 +1,20 @@
+{
+  "name": "pinterest-with-cypress",
+  "version": "1.0.0",
+  "description": "Tests to automate Pinterest web page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open"
+  },
+  "keywords": [
+    "automation"
+  ],
+  "author": "Ivan Martin",
+  "license": "ISC",
+  "devDependencies": {
+    "@simonsmith/cypress-image-snapshot": "^8.1.1",
+    "cypress": "^13.1.0",
+    "typescript": "^5.2.2"
+  }
+}
