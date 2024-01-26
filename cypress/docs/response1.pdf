@@ -1,0 +1,10 @@
+{
+  "status": "failure",
+  "code": 3,
+  "message": "Authorization failed.",
+  "endpoint_name": "vx_verify_login",
+  "data": null,
+  "error": {
+    "message": "None"
+  }
+}

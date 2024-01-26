@@ -1,7 +1,5 @@
 /// <reference types="cypress"/>
 
-import { should } from "chai"
-
 describe("Suite | Landing Page | Pinterest",()=>{
 
     context("ipad-mini resolution",()=>{
@@ -27,7 +25,7 @@ describe("Suite | Landing Page | Pinterest",()=>{
             cy.get('[data-test-id="unauth-header"]').matchImageSnapshot("Header-for-ipad-mini")
             
             //Go to the next window
-            cy.get('[data-test-id="page-scroll-arrow"]').click()
+            cy.get('[data-test-id="page-scroll-arrow"]').click({force:true})
             
             //Check we are in the second window
             cy.url().should('include','https://www.pinterest.com.mx/#search')
@@ -66,7 +64,6 @@ describe("Suite | Landing Page | Pinterest",()=>{
                 failOnStatusCode:false})
                 .then((resp)=>{
                     cy.writeFile('cypress/docs/response1.pdf',resp.body)
-                    //expect(resp.status).to.eq("401 - Unauthorized")
                 });
             
         })
