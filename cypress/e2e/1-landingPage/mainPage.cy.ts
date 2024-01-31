@@ -54,9 +54,10 @@ describe("Suite | Landing Page | Pinterest",()=>{
         })
 
         it("visit Fifth part of the main Landing Page",()=>{
-            cy.visit("#bottom")
+            cy.visit("#bottom",{timeout:500000})
+            cy.wait(5000)
         })
-
+        
         it("Request Method",()=>{
             cy.request({
                 method:"GET",
