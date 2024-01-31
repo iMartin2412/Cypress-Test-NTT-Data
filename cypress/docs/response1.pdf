@@ -1,7 +1,7 @@
 {
   "status": "failure",
   "code": 3,
-  "message": "Authorization failed.",
+  "message": "Неуспешно упълномощаване.",
   "endpoint_name": "vx_verify_login",
   "data": null,
   "error": {
