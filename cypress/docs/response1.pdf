@@ -1,7 +1,7 @@
 {
   "status": "failure",
   "code": 3,
-  "message": "Неуспешно упълномощаване.",
+  "message": "Error al autorizar.",
   "endpoint_name": "vx_verify_login",
   "data": null,
   "error": {
